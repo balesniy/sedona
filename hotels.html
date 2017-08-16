@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Седона: отели</title>
+</head>
+<body>
+  <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#">
+          <img src="http://dummyimage.com/140x70/4d494d/686a82.gif&text=city+of+sedona" alt="Логотип Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hiden">Гостиницы</h1>
+      <div class="img-background">
+        <img src="http://dummyimage.com/1200x220/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="sort">
+          <span>Инфраструктура</span>
+          <label for="pool">Бассейн:</label>
+          <input type="checkbox" name="check-pool" id="pool">
+          <label for="parking">Парковка:</label>
+          <input type="checkbox" name="check-parking" id="parking">
+          <label for="wifi">Wi-fi:</label>
+          <input type="checkbox" name="check-wifi" id="wifi">
+          <span>Тип жилья</span>
+          <label for="hotel">Гостиница:</label>
+          <input type="checkbox" name="check-hotel" id="hotel">
+          <label for="motel">Мотель:</label>
+          <input type="checkbox" name="check-motel" id="motel">
+          <label for="apartments">Апартаменты:</label>
+          <input type="checkbox" name="check-apartments" id="apartments">
+        </div>
+        <div>
+          <span>Стоимость в сутки(Р):</span>
+          <ul class="dayprice">
+            <li>от 0</li>
+            <li>до 3000</li>
+          </ul>
+          <div>
+            <input type="range" min="100" max="5000" name="cost">
+            <input type="submit" value="Показать" />
+          </div>
+        </div>
+      </form>
+      <div class="sort-of">
+        <span>Найдено: 3</span>
+        <ul>
+          <li>Сортировка:</li>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По рейтингу</li>
+        </ul>
+      </div>
+      <section class="result">
+        <h2 class="visually-hiden">Результат поиска</h2>
+        <ul class="search-result">
+          <li class="result-item">
+            <h3>Amara resort &amp; spa</h3>
+            <span>гостиница от 4000 р.</span>
+            <a class="learn-more" href="#">подробнее</a>
+            <a class="reservation" href="#">забронировать</a>
+            <p class="result-item-image">
+              <img src="http://dummyimage.com/135x90/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </p>
+            <Div class="result-item-stars">*Звездочки*</Div>
+            <div class="result-item-rating">Рейтинг: 8,5</div>
+          </li>
+          <li class="result-item">
+            <h3>Desert quail inn</h3>
+            <span>мотель от 3000 р.</span>
+            <a class="learn-more" href="#">подробнее</a>
+            <a class="reservation" href="#">забронировать</a>
+            <p class="result-item-image">
+              <img src="http://dummyimage.com/135x90/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </p>
+            <Div class="result-item-stars">*Звездочки*</Div>
+            <div class="result-item-rating">Рейтинг: 8,9</div>
+          </li>
+          <li class="result-item">
+            <h3>Villas at poco diablo</h3>
+            <span>апартаменты от 2000 р.</span>
+            <a class="learn-more" href="#">подробнее</a>
+            <a class="reservation" href="#">забронировать</a>
+            <p class="result-item-image">
+              <img src="http://dummyimage.com/135x90/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </p>
+            <Div class="result-item-stars">*Звездочки*</Div>
+            <div class="result-item-rating">Рейтинг: 9,2</div>
+          </li>
+        </ul>
+      </section>
+      
+    </main>
+    <footer class="main-footer">
+      <b>#visitsedona</b>
+      <ul class="sosial">
+        <li><a href="#"><img src="http://dummyimage.com/48x48/4d494d/686a82.gif&text=T"  alt="twitter"></a></li>
+        <li><a href="#"><img src="http://dummyimage.com/48x48/4d494d/686a82.gif&text=FB" alt="facebook"></a></li>
+        <li><a href="#"><img src="http://dummyimage.com/48x48/4d494d/686a82.gif&text=Y" alt="youtube"></a></li>
+      </ul>
+        <div class="copyright">
+          <span>website by</span>
+          <div class="mini-logo"><img src="http://dummyimage.com/33x40/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+          </div>
+          <span>html academy</span>
+        </div>
+    </footer>
+</body>
+</html>
