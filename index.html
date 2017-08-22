@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="main-header">
-  <img class="main-header-logo" src="" alt="city of sedona">
+  <img class="main-header-logo" src="" alt="city of sedona" width="138" height="70">
   <nav class="main-nav">
     <ul>
       <li><a href="#">Информация</a></li>
@@ -22,13 +22,13 @@
   </section>
   <section class="lead">
     <p class="slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</p>
-    <p class="5reasons">Рассмотрим 5 причин, по котороым Седона круче, чем Гранд Каньон</p>
+    <p class="reasons">Рассмотрим 5 причин, по котороым Седона круче, чем Гранд Каньон</p>
   </section>
   <section class="reason-left-to-right">
     <div class="left-column">
-      <h2>Настоящий городок</h2>
+      <h2 class="reason-header">Настоящий городок</h2>
       <span class="reason-number">- № 1 -</span>
-      <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+      <p class="reason-text">Седона - не атракцион для туристов, там течет своя жизнь</p>
     </div>
     <div class="right-column">
       <img src="" alt="городок">
@@ -37,9 +37,9 @@
   </section>
   <section class="reason-right-to-left">
     <div class="right-column">
-      <h2>Там есть мост дьявола</h2>
+      <h2 class="reason-header">Там есть мост дьявола</h2>
       <span class="reason-number">- № 2 -</span>
-      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </div>
     <div class="left-column">
       <img src="" alt="мост">
@@ -96,9 +96,11 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <label>Дата заезда:
           <input type="date" name="date-in">
+          <span class="control-icon calendar"></span>
         </label>
         <label>Дата выезда:
           <input type="date" name="date-out">
+          <span class="control-icon calendar"></span>
         </label>
         <label>Взрослые:
           <input type="number" name="adults">
