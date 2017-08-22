@@ -144,6 +144,9 @@ main.container {
   background-color: #81b3d2;
   color: white;
 }
+.filter {
+  background: url(../img/intro-background.jpg) no-repeat;
+}
 
 .filter legend {
   font-size: 16px;
@@ -185,7 +188,6 @@ main.container {
 .sort .sorted-by-item.active {
   color: #81b3d2;
   border-bottom: none;
-  text-decoration: none;
 }
 
 .sort .sort-direction li {
