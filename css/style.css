@@ -12,6 +12,18 @@ body {
   background-color: white;
 }
 
+.main-nav .active {
+  color: #766357;
+}
+
+.main-nav a:hover {
+  color: #81b3d2;
+}
+
+.main-nav a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
 main.container {
   background-color: white;
 }
@@ -102,6 +114,15 @@ main.container {
   background-color: #766357;
 }
 
+.interest .btn:hover {
+  background-color: #604e43;
+}
+
+.interest .btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form-popup {
   font-size: 14px;
   line-height: 26px;
@@ -111,6 +132,15 @@ main.container {
 
 .form-popup input {
   background-color: #f2f2f2;
+  border: solid #e5e5e5 2px;
+}
+
+.form-popup input:hover {
+  background-color: #ebebeb;
+}
+
+.form-popup input:focus {
+  background-color: white;
 }
 
 .form-popup input[type="submit"] {
@@ -118,8 +148,25 @@ main.container {
   color: white;
 }
 
+.form-popup input[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.form-popup input[type="submit"]:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form-popup .control-icon {
   color: #a9a9a9;
+}
+
+.form-popup .control-icon:hover {
+  color: black;
+}
+
+.form-popup .control-icon:active {
+  color: #81b3d2;
 }
 
 .main-footer {
@@ -140,9 +187,18 @@ main.container {
   color: black;
 }
 
-.main-footer .social li {
+.main-footer .social a {
   background-color: #81b3d2;
   color: white;
+}
+
+.main-footer .social a:hover {
+  background-color: #669ec0;
+}
+
+.main-footer .social a:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter {
@@ -156,11 +212,21 @@ main.container {
   color: white;
 }
 
+.filter input[disabled] {
+  color: #6a6a6a;
+}
+
 .filter label, .filter input[type="submit"] {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: white;
+  background-color: transparent;
+}
+
+.filter input[type="submit"]:hover {
+  background-color: white;
+  color: black;
 }
 
 .sort .founded {
@@ -191,8 +257,24 @@ main.container {
   border-bottom: none;
 }
 
+.sort .sorted-by-item:hover {
+  color: #81b3d2;
+}
+
+.sorted-by-item a:active {
+  color: black;
+}
+
 .sort .sort-direction li {
   color: #cacaca;
+}
+
+.sort-direction li:hover {
+  color: #231f20;
+}
+
+.sort-direction a:active {
+  color: #81b3d2;
 }
 
 .sort .sort-direction .active {
@@ -214,6 +296,14 @@ main.container {
   color: black;
 }
 
+.result-item .hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.result-item .hotel-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .result-item .params {
   font-size: 14px;
   line-height: 21px;
@@ -232,8 +322,26 @@ main.container {
   background-color: #81b3d2;
 }
 
+.result-item .buttons .more-info:hover {
+  background-color: #669ec0;
+}
+
+.result-item .buttons .more-info:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .result-item .buttons .order {
   background-color: #766357;
+}
+
+.result-item .buttons .order:hover {
+  background-color: #604e43;
+}
+
+.result-item .buttons .order:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .result-item .rating {
