@@ -19,7 +19,7 @@
   </nav>
 </header>
 <main>
-  <h1 class="visually-hiden">Гостиницы</h1>
+  <h1 class="visually-hidden">Гостиницы</h1>
   <section class="filter">
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
@@ -44,31 +44,31 @@
     </form>
   </section>
   <section class="sort">
-    <div class="founded">Найдено:3</div>
+    <div class="founded">Найдено: <span class="number-of-founded">3</span></div>
     <h2 class="sort-header">сортировка</h2>
-    <ul>
-      <li><a class="active" href="">по цене</a></li>
-      <li><a href="">по типу</a></li>
-      <li><a href="">по рейтингу</a></li>
+    <ul class="sorted-by">
+      <li class="sorted-by-item"><a class="active" href="#">по цене</a></li>
+      <li class="sorted-by-item"><a href="#">по типу</a></li>
+      <li class="sorted-by-item"><a href="#">по рейтингу</a></li>
     </ul>
-    <div class="arrows">
-      <span class="arrow-up-icon"></span>
-      <span class="arrow-down-icon active"></span>
-    </div>
+    <ul class="sort-direction">
+      <li><a href="#"><span class="arrow-up-icon">вверх</span></a></li>
+      <li><a href="#"><span class="arrow-down-icon active">вниз</span></a></li>
+    </ul>
   </section>
   <section class="results">
-    <h2 class="visually-hiden">Результат поиска</h2>
+    <h2 class="visually-hidden">Результат поиска</h2>
     <ul>
       <li class="result-item">
         <div class="preview-block"><img src="" alt="гостиница"></div>
         <div class="params-block">
-          <h3 class="hotel-name">AMARA</h3>
+          <h3 class="hotel-name"><a href="#">AMARA</a></h3>
           <p class="params">
             <span class="type">гостиница</span><span class="price">от 3000 р.</span>
           </p>
           <div class="buttons">
-            <a href="" class="more-info btn">подробнее</a>
-            <a href="" class="btn order">забронировать</a>
+            <a href="#" class="more-info btn">подробнее</a>
+            <a href="#" class="btn order">забронировать</a>
           </div>
         </div>
         <div class="rating-block">
@@ -81,13 +81,13 @@
       <li class="result-item">
         <div class="preview-block"><img src="" alt="гостиница"></div>
         <div class="params-block">
-          <h3 class="hotel-name">AMARA</h3>
+          <h3 class="hotel-name"><a href="#">AMARA</a></h3>
           <p class="params">
             <span class="type">гостиница</span><span class="price">от 3000 р.</span>
           </p>
           <div class="buttons">
-            <a href="" class="more-info btn">подробнее</a>
-            <a href="" class="btn order">забронировать</a>
+            <a href="#" class="more-info btn">подробнее</a>
+            <a href="#" class="btn order">забронировать</a>
           </div>
         </div>
         <div class="rating-block">
@@ -100,13 +100,13 @@
       <li class="result-item">
         <div class="preview-block"><img src="" alt="апартамент"></div>
         <div class="params-block">
-          <h3 class="hotel-name">Villas at poco diablo</h3>
+          <h3 class="hotel-name"><a href="#">Villas at poco diablo</a></h3>
           <p class="params">
             <span class="type">гостиница</span><span class="price">от 3000 р.</span>
           </p>
           <div class="buttons">
-            <a href="" class="more-info btn">подробнее</a>
-            <a href="" class="btn order">забронировать</a>
+            <a href="#" class="more-info btn">подробнее</a>
+            <a href="#" class="btn order">забронировать</a>
           </div>
         </div>
         <div class="rating-block">
@@ -121,7 +121,7 @@
 </main>
 <footer class="main-footer">
   <div class="col-left">
-    <b>#visitsedona</b>
+    <b><a href="#">#visitsedona</a></b>
   </div>
   <div class="col-center">
     <ul class="social">
