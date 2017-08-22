@@ -144,6 +144,7 @@ main.container {
   background-color: #81b3d2;
   color: white;
 }
+
 .filter {
   background: url(../img/intro-background.jpg) no-repeat;
 }
@@ -226,6 +227,7 @@ main.container {
   font-weight: bold;
   color: white;
 }
+
 .result-item .buttons .more-info {
   background-color: #81b3d2;
 }
