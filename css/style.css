@@ -187,6 +187,14 @@ main.container {
   color: black;
 }
 
+.main-footer .copyright:hover {
+  color: #81b3d2;
+}
+
+.main-footer .copyright:hover {
+  color: #bdbbbc;
+}
+
 .main-footer .social a {
   background-color: #81b3d2;
   color: white;
