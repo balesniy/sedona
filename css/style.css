@@ -10,6 +10,8 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -31,14 +33,36 @@ ul {
 .main-nav ul {
   background-color: white;
   display: flex;
-  justify-content: space-around;
 }
 
-.main-nav a {
+.main-nav li {
+  width: 20%;
+}
+
+.main-nav li:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-nav ul a {
+  display: block;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 56px;
   font-weight: bold;
   color: black;
+  vertical-align: middle;
+  padding-left: 72px;
+}
+
+.main-nav li:nth-last-child(2) a, .main-nav li:last-child a {
+  text-align: right;
+  padding-right: 72px;
+}
+
+.main-nav .main-header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .main-nav .active {
@@ -61,20 +85,40 @@ main.container {
   position: relative;
 }
 
-.intro .mask {
-  position: absolute;
-  bottom: 210px;
+.intro .intro-background {
+  object-fit: cover;
+  object-position: 50% -60px;
 }
 
-.slogan {
+.intro:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url(../img/intro-mask.png);
+}
+
+.lead {
+  padding-top: 61px;
+  padding-bottom: 56px;
+}
+
+.lead p {
+  width: 490px;
+  margin: 0 auto;
+}
+
+.lead .slogan {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: black;
   text-align: center;
+  margin-bottom: 38px;
 }
 
-.reasons {
+.lead .reasons {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -102,11 +146,14 @@ main.container {
   background-color: #81b3d2;
   text-align: center;
   width: 33%;
+  padding: 40px 60px 60px;
+}
+
+.reason-left-to-right img, .reason-right-to-left img {
+  display: block;
 }
 
 .reason-left-to-right, .reason-right-to-left {
-  background-color: #81b3d2;
-  text-align: center;
   display: flex;
 }
 
@@ -121,6 +168,7 @@ main.container {
 .advice-item {
   text-align: center;
   width: 33%;
+  padding: 60px 50px;
 }
 
 .advice-item h3 {
@@ -153,6 +201,11 @@ main.container {
   color: black;
 }
 
+.reasons-list .reason-item {
+  padding: 50px 70px 60px;
+  width: 33%;
+}
+
 .reason-item .reason-number, .reason-item p {
   font-size: 14px;
   line-height: 21px;
@@ -162,6 +215,7 @@ main.container {
 
 .interest {
   text-align: center;
+  padding-top: 50px;
 }
 
 .interest b {
@@ -184,6 +238,10 @@ main.container {
   font-weight: bold;
   color: white;
   background-color: #766357;
+  width: 510px;
+  padding: 30px;
+  display: inline-block;
+  margin-top: 50px;
 }
 
 .interest .btn:hover {
@@ -195,26 +253,30 @@ main.container {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.map {
-  position: relative;
-}
-
 .form-popup {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   color: black;
   position: absolute;
-  width: 570px;
+  width: 460px;
   margin: 0 auto;
   left: 0;
   right: 0;
   background-color: white;
+  padding: 55px;
 }
 
 .form-popup form {
   display: flex;
   flex-direction: column;
+}
+
+.form-popup label {
+  line-height: 38px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .form-popup input {
@@ -233,10 +295,39 @@ main.container {
   background-color: white;
 }
 
+.form-popup input[type="date"] {
+  position: absolute;
+  left: 110px;
+  width: 330px;
+  line-height: 36px;
+  vertical-align: middle;
+  padding-left: 12px;
+}
+
+.form-popup .buttons-wrapper {
+  display: inline-block;
+  position: absolute;
+}
+
+.form-popup .buttons-wrapper:first-of-type {
+  left: 110px;
+}
+
+.form-popup .buttons-wrapper:last-of-type {
+  right: 0;
+}
+
+.form-popup input[type="number"], .form-popup input[type="button"] {
+  width: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
 .form-popup input[type="submit"] {
   background-color: #81b3d2;
   color: white;
   border: none;
+  height: 58px;
 }
 
 .form-popup input[type="submit"]:hover {
@@ -260,10 +351,43 @@ main.container {
   fill: #81b3d2;
 }
 
+.form-popup .control-icon.calendar {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.form-popup fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.form-popup .peoples label:nth-of-type(2) {
+  margin-left: 200px;
+}
+
+.map-static {
+  background-image: url(../img/map.jpg);
+  width: 1200px;
+  height: 593px;
+}
+
 .main-footer {
   background-color: rgba(254, 254, 254, 0.9);
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.main-footer.index-footer {
+  margin-top: -118px;
 }
 
 .main-footer .col-left {
@@ -271,6 +395,8 @@ main.container {
   line-height: 26px;
   font-weight: bold;
   color: black;
+  width: 240px;
+  text-align: center;
 }
 
 .main-footer .col-left a {
@@ -282,6 +408,12 @@ main.container {
   line-height: 26px;
   font-weight: normal;
   color: black;
+  width: 240px;
+}
+
+.main-footer .copyright {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-footer .copyright svg {
@@ -298,7 +430,8 @@ main.container {
 
 .main-footer .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 240px;
 }
 
 .main-footer .social a {
@@ -308,10 +441,12 @@ main.container {
   line-height: 48px;
   text-align: center;
   background-color: #81b3d2;
+  margin-right: 10px;
 }
 
 .main-footer .social svg {
   fill: white;
+  vertical-align: middle;
 }
 
 .main-footer .social a:hover {
@@ -338,7 +473,8 @@ main.container {
 
 .filter form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 30px 70px;
 }
 
 .filter legend {
@@ -346,10 +482,12 @@ main.container {
   line-height: 21px;
   font-weight: bold;
   color: white;
+  margin-bottom: 25px;
 }
 
 .filter fieldset {
   border: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -364,6 +502,10 @@ main.container {
   font-weight: normal;
   color: white;
   background-color: transparent;
+  margin-bottom: 20px;
+}
+.filter label:last-child {
+  margin-bottom: 0;
 }
 
 .filter input[type="submit"] {
@@ -377,10 +519,16 @@ main.container {
 
 .sort {
   display: flex;
+  padding: 30px 70px;
+  border-bottom: solid 2px #e5e5e5;
+  align-items: center;
 }
 
 .sort .sorted-by {
   display: flex;
+  width: 240px;
+  justify-content: space-between;
+  margin-right: auto;
 }
 
 .sort .founded {
@@ -391,6 +539,7 @@ main.container {
 }
 
 .sort .sort-header {
+  margin: 0 40px 0 30px;
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
@@ -421,6 +570,8 @@ main.container {
 
 .sort .sort-direction {
   display: flex;
+  width: 25px;
+  justify-content: space-between;
 }
 
 .sort .sort-direction svg {
@@ -440,10 +591,14 @@ main.container {
 }
 
 .results .result-item {
-  border: solid 2px #e5e5e5;
+  border-bottom: solid 2px #e5e5e5;
   display: flex;
+  padding: 30px 70px;
 }
-
+.result-item .hotel-name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .result-item .hotel-name a {
   font-size: 21px;
   line-height: 26px;
@@ -458,19 +613,33 @@ main.container {
 .result-item .hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+.result-item .params-block {
+  margin-left: 20px;
+}
 
 .result-item .params {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: #333333;
+  margin: 5px 0;
+}
+.result-item .params span {
+  display: inline-block;
+}
+.result-item .params .type {
+  margin-right: 10px;
+  width:110px;
 }
 
 .result-item .buttons .btn {
+  display: inline-block;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: white;
+  padding: 7px 15px;
+  margin-right: 10px;
 }
 
 .result-item .buttons .more-info {
@@ -498,13 +667,21 @@ main.container {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
-
+.result-item .rating-block {
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .result-item .rating {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: #666666;
   background-color: #f7f7f7;
+  margin: 0;
 }
 
 .result-item .star-icon {

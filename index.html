@@ -10,23 +10,20 @@
 <body>
 <header class="main-header container">
   <nav class="main-nav">
+    <a class="main-header-logo">
+      <img src="img/main-header-logo.png" alt="city of sedona" width="138" height="70">
+    </a>
     <ul>
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и Видео</a></li>
-      <li>
-        <a>
-          <img class="main-header-logo" src="img/main-header-logo.png" alt="city of sedona" width="138" height="70">
-        </a>
-      </li>
       <li><a href="#">Карта штата</a></li>
-      <li><a class="active" href="#">Гостиницы</a></li>
+      <li><a href="#">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
 <main class="container">
   <section class="intro">
-    <img src="img/intro-background.jpg" alt="Горы" width="1200" height="773">
-    <img class="mask" src="img/intro-mask.png" alt="" width="1200" height="57">
+    <img class="intro-background" src="img/intro-background.jpg" alt="Горы" width="1200" height="510">
   </section>
   <section class="lead">
     <p class="slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</p>
@@ -94,8 +91,8 @@
   </section>
   <section class="interest">
     <b>Заинтересовались?</b>
-    <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-    <a href="#" class="btn">Поиск гостиниц в седоне</a>
+    <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+    <a href="#" class="btn">Поиск гостиницы в седоне</a>
   </section>
   <section class="map">
     <div class="form-popup">
@@ -122,22 +119,27 @@
             </svg>
           </span>
         </label>
-        <formgroup>
-          <label>Взрослые:
-            <input type="number" name="adults">
-          </label>
-          <label>Дети:
-            <input type="number" name="children">
-          </label>
-        </formgroup>
+        <fieldset class="peoples">
+          <label for="adults-number">Взрослые:</label>
+          <div class="buttons-wrapper">
+            <input type="button" value="-">
+            <input id="adults-number" type="number" name="adults">
+            <input type="button" value="+">
+          </div>
+          <label for="children-number">Дети:</label>
+          <div class="buttons-wrapper">
+            <input type="button" value="-">
+            <input id="children-number" type="number" name="children">
+            <input type="button" value="+">
+          </div>
+        </fieldset>
         <input type="submit" value="Найти">
       </form>
     </div>
-    <img src="img/map.jpg" alt="карта" class="map-static" width="1200" height="593">
-
+    <div class="map-static"></div>
   </section>
 </main>
-<footer class="main-footer container">
+<footer class="main-footer index-footer container">
   <div class="col-left">
     <b><a href="#">#visitsedona</a></b>
   </div>
