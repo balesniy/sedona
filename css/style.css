@@ -14,7 +14,9 @@ ul {
   margin: 0;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -827,7 +829,6 @@ main.container {
   position: absolute;
   top: -9px;
 
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -839,7 +840,6 @@ main.container {
 .range-toggle:hover {
   background: #1c4f80;
 }
-
 
 .range-toggle-min {
   left: 0;
@@ -870,3 +870,57 @@ main.container {
 
   background: #ffffff;
 }
+
+.filter-checkbox {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  /*border: 2px solid white;*/
+  /*border-radius: 2px;*/
+  background: url(../img/checkbox-off.svg) no-repeat;
+}
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  /*border: 2px solid white;*/
+  /*border-radius: 2px;*/
+  background-image: url(../img/checkbox-on.svg);
+}
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,*/
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {*/
+  /*content: "";*/
+
+  /*position: absolute;*/
+  /*top: 8px;*/
+  /*left: 1px;*/
+
+  /*width: 15px;*/
+  /*height: 2px;*/
+
+  /*background-color: white;*/
+/*}*/
+
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {*/
+  /*transform: rotate(45deg);*/
+/*}*/
+
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {*/
+  /*transform: rotate(-45deg);*/
+/*}*/
