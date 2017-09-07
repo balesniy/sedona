@@ -119,20 +119,24 @@
             </svg>
           </span>
         </label>
-        <fieldset class="peoples">
-          <label for="adults-number">Взрослые:</label>
-          <div class="buttons-wrapper">
-            <input type="button" value="-">
-            <input id="adults-number" type="number" name="adults">
-            <input type="button" value="+">
-          </div>
-          <label for="children-number">Дети:</label>
-          <div class="buttons-wrapper">
-            <input type="button" value="-">
-            <input id="children-number" type="number" name="children">
-            <input type="button" value="+">
-          </div>
-        </fieldset>
+        <div class="peoples">
+          <label for="adults-number">Взрослые:
+            <div class="buttons-wrapper">
+              <input type="button" value="-">
+              <input id="adults-number" type="number" name="adults">
+              <input type="button" value="+">
+            </div>
+          </label>
+
+          <label for="children-number">Дети:
+            <div class="buttons-wrapper">
+              <input type="button" value="-">
+              <input id="children-number" type="number" name="children">
+              <input type="button" value="+">
+            </div>
+          </label>
+
+        </div>
         <input type="submit" value="Найти">
       </form>
     </div>

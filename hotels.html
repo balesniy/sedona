@@ -39,14 +39,23 @@
         <label><input type="checkbox" name="check-motel" checked>Мотель</label>
         <label><input type="checkbox" name="check-apartments" checked>Апартаменты</label>
       </fieldset>
-      <fieldset>
-        <legend>Стоимость в сутки (р):</legend>
-        <div class="price-block">
-          <label>От <input type="number"></label>
-          <label>До <input type="number"></label>
+      <fieldset class="filter-range">
+        <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+        <div class="price-controls">
+          <label class="min-price">От <input type="number" value="0"></label>
+          <label class="max-price">До <input type="number" value="3000"></label>
         </div>
-        <div class="slider visually-hidden">Слайдер</div>
-        <input type="submit" value="показать">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+
+        </div>
+
+        </div>
+        <input class="btn-transparent" type="submit" value="показать">
       </fieldset>
     </form>
   </section>

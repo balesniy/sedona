@@ -281,11 +281,13 @@ main.container {
 }
 
 .form-popup form {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
 }
 
 .form-popup label {
+  display: flex;
+  justify-content: space-between;
   line-height: 38px;
   vertical-align: middle;
   margin-bottom: 30px;
@@ -312,9 +314,9 @@ main.container {
 }
 
 .form-popup input[type="date"] {
-  position: absolute;
-  left: 110px;
-  /*width: 330px;*/
+  /*position: absolute;*/
+  /*left: 110px;*/
+  width: 330px;
   /*line-height: 36px;*/
   /*vertical-align: middle;*/
   padding-left: 12px;
@@ -322,16 +324,16 @@ main.container {
 
 .form-popup .buttons-wrapper {
   display: inline-block;
-  position: absolute;
+  /*position: absolute;*/
   font-size: 0;
 }
 
 .form-popup .buttons-wrapper:first-of-type {
-  left: 110px;
+  /*left: 110px;*/
 }
 
 .form-popup .buttons-wrapper:last-of-type {
-  right: 0;
+  /*right: 0;*/
 }
 
 .form-popup input[type="number"], .form-popup input[type="button"] {
@@ -359,6 +361,7 @@ main.container {
   color: white;
   border: none;
   height: 58px;
+  width: 100%;
 }
 
 .form-popup input[type="submit"]:hover {
@@ -392,15 +395,17 @@ main.container {
   cursor: pointer;
 }
 
-.form-popup fieldset {
+.form-popup .peoples {
   border: none;
   padding: 0;
-  margin-bottom: 55px;
-  position: relative;
+  /*margin-bottom: 55px;*/
+  /*position: relative;*/
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-popup .peoples label:nth-of-type(2) {
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 
 .map-static {
@@ -662,6 +667,7 @@ main.container {
   color: #333333;
   margin-top: 5px;
 }
+
 .result-item .params-price {
 }
 
@@ -730,4 +736,137 @@ main.container {
   background-image: url(../img/star-icon.svg);
 }
 
+.filter-range {
+  width: 330px;
+  /*margin: 50px auto; !* для демо *!*/
 
+  /*color: #ffffff;*/
+  /*text-transform: uppercase;*/
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: -9px;
+
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
