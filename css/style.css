@@ -106,7 +106,6 @@ main.container {
   background-size: cover;
 }
 
-
 .intro:after {
   content: "";
   position: absolute;
@@ -179,7 +178,7 @@ main.container {
   text-align: center;
   width: 33%;
   min-height: 250px;
-  padding: 20px 5% 5%;
+  padding: 30px 5% 5%;
   box-sizing: border-box;
 }
 
@@ -196,7 +195,6 @@ main.container {
   background: url(../img/reason-2-full.jpg) center;
   background-size: cover;
 }
-
 
 .reason-left-to-right, .reason-right-to-left {
   display: flex;
@@ -355,11 +353,7 @@ main.container {
 }
 
 .form-popup input[type="date"] {
-  /*position: absolute;*/
-  /*left: 110px;*/
   width: 330px;
-  /*line-height: 36px;*/
-  /*vertical-align: middle;*/
   padding-left: 12px;
 }
 
@@ -367,14 +361,6 @@ main.container {
   display: inline-block;
   /*position: absolute;*/
   font-size: 0;
-}
-
-.form-popup .buttons-wrapper:first-of-type {
-  /*left: 110px;*/
-}
-
-.form-popup .buttons-wrapper:last-of-type {
-  /*right: 0;*/
 }
 
 .form-popup input[type="number"], .form-popup input[type="button"] {
@@ -439,19 +425,12 @@ main.container {
 .form-popup .peoples {
   border: none;
   padding: 0;
-  /*margin-bottom: 55px;*/
-  /*position: relative;*/
   display: flex;
   justify-content: space-between;
 }
 
-.form-popup .peoples label:nth-of-type(2) {
-  /*margin-left: 200px;*/
-}
-
 .map-static {
   background-image: url(../img/map.jpg);
-  /*width: 1200px;*/
   height: 593px;
 }
 
@@ -774,10 +753,6 @@ main.container {
 
 .filter-range {
   width: 330px;
-  /*margin: 50px auto; !* для демо *!*/
-
-  /*color: #ffffff;*/
-  /*text-transform: uppercase;*/
 }
 
 .filter-range-title {
@@ -921,8 +896,6 @@ main.container {
   width: 23px;
   height: 23px;
 
-  /*border: 2px solid white;*/
-  /*border-radius: 2px;*/
   background: url(../img/checkbox-off.svg) no-repeat;
 }
 
@@ -934,8 +907,6 @@ main.container {
   width: 27px;
   height: 23px;
 
-  /*border: 2px solid white;*/
-  /*border-radius: 2px;*/
   background-image: url(../img/checkbox-on.svg);
 }
 
