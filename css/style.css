@@ -60,12 +60,12 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: black;
   vertical-align: middle;
-  padding-left: 72px;
+  padding-left: 33%;
 }
 
 .main-nav li:nth-last-child(2) a, .main-nav li:last-child a {
   text-align: right;
-  padding-right: 72px;
+  padding-right: 33%;
   padding-left: 0;
 }
 
@@ -97,6 +97,7 @@ main.container {
 }
 
 .intro .intro-background {
+  width: 100%;
   /*object-fit: cover;*/
   /*object-position: 50% -60px;*/
 }
@@ -171,11 +172,13 @@ main.container {
   background-color: #81b3d2;
   text-align: center;
   width: 33%;
-  padding: 40px 60px 60px;
+  padding: 20px 5% 5%;
+  box-sizing: border-box;
 }
 
 .reason-left-to-right img, .reason-right-to-left img {
   display: block;
+  width: 100%;
 }
 
 .reason-left-to-right, .reason-right-to-left {
@@ -193,7 +196,7 @@ main.container {
 .advice-item {
   text-align: center;
   width: 33%;
-  padding: 60px 50px;
+  padding: 60px 5%;
 }
 
 .advice-item h3 {
@@ -227,7 +230,7 @@ main.container {
 }
 
 .reasons-list .reason-item {
-  padding: 50px 70px 60px;
+  padding: 50px 5% 60px;
   width: 33%;
 }
 
@@ -434,7 +437,7 @@ main.container {
 
 .map-static {
   background-image: url(../img/map.jpg);
-  width: 1200px;
+  /*width: 1200px;*/
   height: 593px;
 }
 
