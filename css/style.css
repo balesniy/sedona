@@ -37,8 +37,11 @@ input[type="radio"].visually-hidden {
   min-width: 768px;
   margin: 0 auto;
   position: relative;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: white;
+  box-sizing: border-box;
 }
-
 
 .main-nav ul {
   background-color: white;
@@ -47,26 +50,29 @@ input[type="radio"].visually-hidden {
 
 .main-nav li {
   width: 20%;
+  text-align: left;
 }
 
 .main-nav li:nth-child(2) {
   margin-right: auto;
 }
 
+.main-nav li:nth-last-child(2), .main-nav li:last-child {
+  text-align: right;
+}
+
 .main-nav .menu-elem {
-  display: block;
   font-size: 14px;
   line-height: 56px;
   font-weight: bold;
   color: black;
   vertical-align: middle;
-  padding-left: 33%;
+  margin-left: 20%;
 }
 
 .main-nav li:nth-last-child(2) a, .main-nav li:last-child a {
-  text-align: right;
-  padding-right: 33%;
-  padding-left: 0;
+  margin-right: 20%;
+  margin-left: 0;
 }
 
 .main-nav .main-header-logo {
@@ -94,13 +100,12 @@ main.container {
 
 .intro {
   position: relative;
+  width: 100%;
+  height: 510px;
+  background: url('../img/intro-background-clear.jpg') no-repeat center center;
+  background-size: cover;
 }
 
-.intro .intro-background {
-  width: 100%;
-  /*object-fit: cover;*/
-  /*object-position: 50% -60px;*/
-}
 
 .intro:after {
   content: "";
@@ -110,6 +115,7 @@ main.container {
   height: 57px;
   background-image: url(../img/intro-mask.png);
   background-position-x: 50%;
+  background-size: 100% 57px;
 }
 
 .intro:before {
