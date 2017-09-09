@@ -178,21 +178,28 @@ main.container {
   background-color: #81b3d2;
   text-align: center;
   width: 33%;
+  min-height: 250px;
   padding: 20px 5% 5%;
   box-sizing: border-box;
 }
 
-.reason-left-to-right img, .reason-right-to-left img {
-  display: block;
-  width: 100%;
+.reason-left-to-right::after {
+  content: '';
+  width: 67%;
+  background: url(../img/reason-1-full.jpg) center;
+  background-size: cover;
 }
+
+.reason-right-to-left::before {
+  content: '';
+  width: 67%;
+  background: url(../img/reason-2-full.jpg) center;
+  background-size: cover;
+}
+
 
 .reason-left-to-right, .reason-right-to-left {
   display: flex;
-}
-
-.reason-right-to-left .right-column {
-  order: 1;
 }
 
 .advices ul {
@@ -202,7 +209,8 @@ main.container {
 .advice-item {
   text-align: center;
   width: 33%;
-  padding: 60px 5%;
+  padding: 50px 5%;
+  box-sizing: border-box;
 }
 
 .advice-item h3 {
